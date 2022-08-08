@@ -1,9 +1,16 @@
 
 function RatingSelect({select, selected} ) {
 
+  // const { feedbackEdit } = useContext(FeedbackContext)
+  // useEffect(() => {
+  //   setSelected
+  // }, [])
+
   const handleChange = (e) => {
     select(+e.currentTarget.value)
   }
+
+
   return (
     <ul className='rating'>
       {Array.from({ length: 10 }, (_, i) => (
